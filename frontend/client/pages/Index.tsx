@@ -278,7 +278,7 @@ export default function Index() {
         {!selectedImage && !result && (
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-emerald-900 mb-4">
-              Detect Crop Diseases
+              Detect Apple and Corn Crop Diseases
               <br />
               <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                 Instantly
@@ -288,6 +288,7 @@ export default function Index() {
               Upload a photo of your crop leaf and our advanced CNN model will
               analyze it in seconds to detect diseases, providing you with
               actionable treatment recommendations.
+              <br />It can detect: <br />Apple Scab, Black Rot and Healthy; <br />Corn Rust, Northern Leaf Blight and Healthy.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -764,8 +765,8 @@ export default function Index() {
         <div className="mt-16 pt-12 border-t border-emerald-100">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
-              { number: "95%", label: "Detection Accuracy" },
-              { number: "50+", label: "Crop Diseases Identified" },
+              { number: "98.5%", label: "Detection Accuracy" },
+              { number: "Apple and Corn", label: "Crop Diseases Identified" },
               { number: "24/7", label: "Available Anytime" },
             ].map((stat, idx) => (
               <div key={idx}>

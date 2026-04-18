@@ -68,10 +68,10 @@ def predict():
         label = class_names[class_index].replace("___", " - ").replace("_", " ")
 
         return jsonify({
-            "prediction": label,
-            "confidence": round(confidence * 100, 2),
-            "top3": top3
-        })
+        "prediction": label,
+        "confidence": round(confidence * 100, 2),
+        "top3": top3,
+    })
 
     except Exception as e:
         print("Error:", str(e))
