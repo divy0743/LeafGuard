@@ -205,3 +205,82 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# =========================
+# Python / Flask
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.env
+
+# Flask cache / temp
+instance/
+*.sqlite3
+
+# =========================
+# Machine Learning Models
+# =========================
+*.h5
+*.keras
+*.pb
+*.pbtxt
+saved_model/
+model_fixed/
+*.ckpt
+*.index
+*.data*
+
+# =========================
+# Large files / datasets
+# =========================
+data/
+datasets/
+*.zip
+*.tar
+*.gz
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Vite / cache
+.vite/
+.cache/
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment / secrets
+# =========================
+.env.local
+.env.development
+.env.production
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.tmp
+*.swp
